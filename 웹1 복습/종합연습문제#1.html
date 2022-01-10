@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>종합연습문제#1</title>
+    <style>
+        *{margin:0;padding:0;}
+        div{margin:0 auto;}
+
+        #a, #b, #img{
+            width:600px;
+            height:600px;
+        }
+
+        #a{background-color:red;}
+        #b{background-color:blue;}
+        #img{background-color:yellow;}
+
+        #a div, #b div, #img div{
+            width:200px;
+            height:200px;
+            text-align:center;
+            line-height:200px;
+        }
+
+        #a div{
+            font-size:30px;
+            color:#fff;
+        }
+
+        #a div:nth-child(1){background-color:aqua;}
+        #a div:nth-child(2){background-color:blue;}
+        #a div:nth-child(3){background-color:green;}
+
+        #b div{
+            background-color:#000;
+        }
+
+        #b div:nth-child(1){
+            font-size:44px;
+            color:red;
+        }
+
+        #b div:nth-child(2){
+            font-size:22px;
+            color:yellow;
+        }
+
+        #b div:nth-child(3){
+            font-size:70px;
+            color:orange;
+        }
+
+        #img img{
+            width:200px;
+            height:200px;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div id="a">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+        <div id="b">
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+        <div id="img">
+            <div><a href="#"><img src="img/1/7.jpg" alt=""></a></div>
+            <div><a href="#"><img src="img/1/8.jpg" alt=""></a></div>
+            <div><a href="#"><img src="img/1/9.jpg" alt=""></a></div>
+        </div>
+    </div>
+</body>
+</html>
