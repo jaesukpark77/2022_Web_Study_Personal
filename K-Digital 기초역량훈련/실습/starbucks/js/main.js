@@ -50,3 +50,35 @@ new Swiper('.notice-line .swiper', {
   autoplay:true,
   loop:true
 });
+
+new Swiper('.promotion .swiper', {
+  slidesPerView:3,
+  spaceBetween:10,
+  centeredSlides: true,
+  loop:true,
+  autoplay:{
+    delay:5000
+  },
+  pagination:{
+    el:'.promotion .swiper-pagination', // 페이지 번호 요소 선택자
+    clickable: true, // 사용자의 페이지 번호 요소 제어    
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+});
+
+const promotionEL = document.querySelector('.promotion');
+const promotionToggleBtn = document.querySelector('.toggle-promotion');
+let isHidePromotion = false;
+promotionToggleBtn.addEventListener('click', function(){
+  isHidePromotion = !isHidePromotion
+  if(isHidePromotion){
+    // 숨김 처리!
+    promotionEL.classList.add('hide');
+  }else{
+    // 보임 처리!
+    promotionEL.classList.remove('hide');
+  }
+});
