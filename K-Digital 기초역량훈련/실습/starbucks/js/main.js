@@ -64,8 +64,19 @@ new Swiper('.promotion .swiper', {
     clickable: true, // 사용자의 페이지 번호 요소 제어    
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    prevEl: '.promotion .swiper-button-prev',
+    nextEl: '.promotion .swiper-button-next',
+  }
+});
+
+new Swiper('.awards .swiper',{
+  autoplay:true,
+  loop:true,
+  spaceBetween:30,
+  slidesPerView:5,
+  navigation:{
+    prevEl:'.awards .swiper-button-prev',
+    nextEl:'.awards .swiper-button-next'
   }
 });
 
