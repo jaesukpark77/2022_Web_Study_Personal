@@ -1,5 +1,6 @@
 @import url(./normalize.css);
 @import url(./reset.css);
+@import url(./fontello.css);
 
 *,
 *::before,
@@ -26,7 +27,8 @@ body {
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-size:1.4rem;
   color:#121212;
-  background:#ccc;
+  background: #ccc
+    linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
 }
 
 a{
@@ -52,6 +54,8 @@ a{
 .logo{
   position:absolute;
   top:45px;
+  left:45px;
+  z-index:99;
 }
 
 .member{
@@ -76,6 +80,87 @@ a{
 .divider{
   padding-top:8px;
   margin:0 4px;
+}
+
+/* 메인 메뉴 */
+.navigation{
+  margin-bottom:40px;
+}
+
+.menu {
+  border-radius:0 0 5px 5px;
+  border-top: 2px solid currentColor;
+  background: #e85e2c
+    linear-gradient(
+      to bottom,
+      #1e5799 0%,
+      #ef9126 0%,
+      #e85e2c 35%,
+      #e85e2c 70%,
+      #ef9126 100%
+    );
+  height:47px;
+  padding-left:200px;
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:space-between;
+}
+
+.menu-item{
+  position:relative;
+  border-left: 2px solid #fff;
+}
+
+.menu-button{
+  border:0;
+  background:transparent;
+  padding:0 22px;
+  line-height:45px;
+  font-size:15px;
+  font-weight:700;
+  color:#fff;
+  text-shadow:1px 1px 0 #000, -1px -1px 0 #000;
+}
+
+.is-active .menu-button{
+  color:#ff0;
+}
+
+.is-active .menu-button::after{
+  content:"";
+  display:block;
+  border-top:2px solid #000;
+}
+
+.sub-menu{
+  position:absolute;
+  top:47px;
+  display:none;
+}
+
+.sub-menu a{
+  display:inline-block;
+  padding:9px 0;
+}
+
+.sub-menu a:hover, .sub-menu a:focus{
+  color:#f00;
+}
+
+.menu-html, .menu-css, .menu-standards{
+  left:0;
+}
+
+.menu-accessibility, .menu-qna, .menu-archive{
+  right:0;
+}
+
+.is-active .sub-menu{
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:space-between;
+  gap:1em;
+  white-space:nowrap;
 }
 
 /* visual 영역 */
@@ -115,7 +200,8 @@ a{
 
 /* footer 영역 */
 .footer{
-  background: gray;
+  background: #ccc
+    linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
 }
 
 .footer-inner{
