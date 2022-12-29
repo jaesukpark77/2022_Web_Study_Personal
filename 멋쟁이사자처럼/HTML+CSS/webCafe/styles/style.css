@@ -221,17 +221,105 @@ a{
 
 /* main 영역 */
 .main{
-  background: lightgreen;
+  background:#fff;
+  min-height:450px;
   display:flex;
   flex-flow:row nowrap;
   justify-content:space-between;
   align-items:flex-start;
   padding:28px 16px;
+  border-radius:15px 15px 0 0;
 }
 
 .group1{
-  background:red;
   width:250px;
+}
+
+.login{
+  background:#ed552f radial-gradient(circle at right top, #e8852e, #ed552f);
+  padding:12px;
+  border-radius:5px;
+  box-shadow:5px 5px 0 #ccc;
+}
+
+.login-title{
+  color: #ff0;
+  font-size:15px;
+  font-weight:700;
+  text-indent:10px;
+}
+
+.login-form, .sign{
+  background:#fff;
+}
+
+.login-form{
+  margin-top:10px;
+  border-radius:5px 5px 0 0;
+  padding:8px;
+}
+
+.login-form fieldset{
+  border-bottom:1px solid #aaa;
+  padding-bottom:4px;
+  position:relative;
+}
+
+.login-form div{
+  margin-bottom:4px;
+}
+
+.login-form label{
+  display:inline-block;
+  width:4em;
+}
+
+.login-form input{
+  width:90px;
+  height:24px;
+  border:1px solid #aaa;
+  border-radius:2px;
+  padding:2px 2px 2px 6px;
+}
+
+.login-button{
+  position:absolute;
+  top:0;
+  right:0;
+  width:50px;
+  height:53px;
+  padding:0;
+  font-size:13px;
+  color:#fff;
+  background:#ed552f;
+  border:0;
+  border-radius:2px;
+}
+
+.sign{
+  border-radius:0 0 5px 5px;
+  padding:4px 10px;
+  font-size:0;
+}
+
+.sign li{
+  display:inline-block;
+  font-size:13px;
+}
+
+.sign li:first-child{
+  width:35%;
+}
+
+.sign li:last-child{
+  width:65%;
+  text-align:right;
+}
+
+.sign a{
+  display: inline-block;
+  padding:6px 0;
+  letter-spacing:-1px;
 }
 
 .group2{
