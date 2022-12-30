@@ -343,6 +343,55 @@ a{
   color:#f00;
 }
 
+/* 웹 관련 용어 영역 시작 */
+.term{
+  background: linear-gradient(to bottom, #ccc, #eee);
+  margin-top:20px;
+  border:1px solid #a3a3a3;
+  border-radius:5px;
+  padding:16px;
+}
+
+.term-title{
+  font-size:1.5rem;
+  font-weight:700;
+}
+
+.term-list{
+  margin-top:16px;
+}
+
+.term-list div{
+  margin-top:12px;
+  display:flow-root;
+}
+
+.term-list-subject, .term-list-brief{
+  float:right;
+  width:142px;
+}
+
+.term-list-thumbnail{
+  float:left;
+}
+
+.term-list-thumbnail img{
+  vertical-align:middle;
+}
+
+.term-list-brief{
+  line-height:21px;
+  margin-top:4px;
+}
+
+.cross .term-list-subject, .cross .term-list-brief{
+  float:left;
+}
+
+.cross .term-list-thumbnail{
+  float:right;
+}
+
 .group2{
   background:violet;
   width:310px;
