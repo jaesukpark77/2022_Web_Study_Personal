@@ -322,6 +322,27 @@ a{
   letter-spacing:-1px;
 }
 
+/* validation 영역 */
+.validation-list{
+  margin-top:25px;
+}
+
+.validation-list li{
+  margin-top:12px;
+}
+
+.validation-list li a{
+  display:block;
+  background:url('./images/validation_icon.png') no-repeat 20px 50%, linear-gradient(to bottom, #ccc, #eee);
+  border:1px solid #ccc;
+  padding:8px 8px 8px 46px;
+  border-radius:20px;
+}
+
+.validation-list a:hover, .validation-list a:focus{
+  color:#f00;
+}
+
 .group2{
   background:violet;
   width:310px;
